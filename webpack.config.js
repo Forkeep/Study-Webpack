@@ -4,7 +4,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 
 module.exports = {
-
+    mode: 'development',
     module: {
         rules: [
             {
@@ -20,9 +20,9 @@ module.exports = {
         app: './src/index.js',
         print: './src/print.js',
     },
-    devtool:'inline-source-map',
+    devtool: 'inline-source-map',
     plugins: [
-        new CleanWebpackPlugin(),
+        // new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
             title: 'Output Management',
             template: './src/public/temp.html'
