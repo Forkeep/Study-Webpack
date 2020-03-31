@@ -4,6 +4,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 
 module.exports = {
+
     module: {
         rules: [
             {
@@ -19,6 +20,7 @@ module.exports = {
         app: './src/index.js',
         print: './src/print.js',
     },
+    devtool:'inline-source-map',
     plugins: [
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
