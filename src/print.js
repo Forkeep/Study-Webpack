@@ -1,3 +1,4 @@
-export default function printMe() {
-console.log('asdasd')
+export default function printMe(num) {
+console.log(num)
+console.log('修改了')
 }
